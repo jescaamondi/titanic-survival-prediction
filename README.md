@@ -62,12 +62,17 @@ Fare and age are used in many splits because they are continuous, so the trees c
 
 ## Run it yourself
 
+jupyter notebook titanic/titanic_lightgbm.ipynb
+jupyter notebook titanic/logistic_regression_baseline.ipynb
+
 ```bash
 git clone https://github.com/jescaamondi/titanic-survival-prediction.git
 cd titanic-survival-prediction
 pip install -r requirements.txt
 jupyter notebook titanic/titanic_lightgbm.ipynb
 ```
+
+`titanic_lightgbm.ipynb` is the main model. `logistic_regression_baseline.ipynb` compares label encoding and one-hot encoding with a logistic regression baseline.
 
 `titanic/cleaning.py` runs the cleaning and feature-engineering steps on their own and writes `titanic/titanic_cleaned.csv`.
 
